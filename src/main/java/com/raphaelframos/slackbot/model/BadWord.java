@@ -11,10 +11,16 @@ import lombok.Data;
 @Document(collection = "badwords")
 public class BadWord {
 	
+	
 	@Id
 	private String id;
 	String user;
     String word;
     LocalDate updateDate = LocalDate.now();
+    
+    public BadWord(String user, String word) {
+		setUser(user);
+		setWord(word);
+	}
 
 }
