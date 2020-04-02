@@ -6,4 +6,6 @@ import com.raphaelframos.slackbot.model.BadWord;
 
 public interface BadWordRepository extends CrudRepository<BadWord, String>{
 
+	Integer countByUser(String userId);
+
 }

@@ -1,7 +1,9 @@
+
 plugins {
 	id 'org.springframework.boot' version '2.2.6.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'maven'
 }
 
 group = 'com.raphaelframos'
@@ -31,7 +33,8 @@ dependencies {
 	}
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     testCompile('org.springframework.boot:spring-boot-starter-test')
-    implementation 'me.ramswaroop.jbot:jbot:3.0.2'
+    implementation 'me.ramswaroop.jbot:jbot:4.1.0'
+    implementation 'commons-lang:commons-lang:2.3'
 }
 
 test {
